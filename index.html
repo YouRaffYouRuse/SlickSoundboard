@@ -4,34 +4,30 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<script>
-	for (var i = 0; i < 100; i++) {
-		var img = document.createElement("img");
-
-		var a = Math.floor((Math.random() * 100) + 1);
-		var b = Math.floor((Math.random() * 100) + 1);
-		img.setAttribute("class", "image");
-		img.style.top = a + "%";
-		img.style.left = b + "%";				
-		img.src = "img/pogchamp.png";
-		document.body.appendChild(img);	
-    }
-	</script>
-
-	<audio id="s1" src="sound/gurr.mp3"></audio>
-	<audio id="s2" src="sound/chicken.mp3"></audio>
-	<center>
-		<img src="img/ape.gif"/><br><br>
+	<img class="image"
+		width=500
+		height=500
+		src="img/pogchamp.png"/>
 		
-		<button type="button" 
-				class="btn btn-primary btn-lg"
-				onclick="document.getElementById('s1').play()">Gorilla</button>
-				
-		<button type="button" 
-				class="btn btn-primary btn-lg"
-				onclick="document.getElementById('s2').play()">Chicken</button>
+	<img class="image"
+		style="left:60%;"
+		width=500
+		height=500
+		src="img/pogchamp.png"/>
+	<center>
+		<img src="img/ape.gif"/><br>
+		<table class="table1">
+			<tbody>
+				<tr>
+					<td>Gorilla</td>
+					<td><audio controls loop src="sound/gurr.mp3"></audio></td>
+				</tr>
+				<tr>
+					<td>Chicken</td>
+					<td><audio controls loop src="sound/chicken.mp3"></audio></td>
+				</tr>
+			</tbody>
+		</table>
 	</center>
-	
-
 </body>
 </html>
